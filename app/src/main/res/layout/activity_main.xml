@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/app_name"
+            app:titleTextColor="?attr/colorOnPrimary" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="100dp"
+        android:text="ADDITION"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="20dp"
+        android:text="SUBSTRACTION"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/buttonMul"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="20dp"
+        android:text="MULTIPLICATION"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="20dp"
+        android:text="DIVISION"
+        android:textSize="22sp" />
+</LinearLayout>
